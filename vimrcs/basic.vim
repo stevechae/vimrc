@@ -65,6 +65,8 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" show line numbers
+set number
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -202,7 +204,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap "Don't wrap lines
 
 
 """"""""""""""""""""""""""""""
